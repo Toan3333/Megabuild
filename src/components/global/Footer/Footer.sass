@@ -1,0 +1,22 @@
+.footer
+	&-list
+		display: grid
+		grid-template-columns: 3.8fr 2.6fr 2.5fr 1.2fr
+		gap: 36px
+.footer-col-item > h3
+	@apply text-xl font-medium leading-7 font-oswald text-Second/950
+.footer-col-item > h3.title
+	@apply text-[20px] mb-6
+.footer-col-item > p
+	@apply text-[1rem] leading-6 font-normal text-neutral-900
+.footer-nav > li
+	@apply  rem:leading-[26px] font-semibold text-Second/950
+.footer-nav > li > a
+	@apply text-lg
+	&:hover
+		@apply text-Primary/Red border-b border-b-Primary/Red
+.social-icon.active
+	@apply bg-Second/950
+.social-icon
+	&:hover
+		@apply bg-Second/950

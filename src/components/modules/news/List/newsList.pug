@@ -1,0 +1,21 @@
++banner("./img/banner-news.png")
++breadcum(
+        { link: "", icon: "fa-thin fa-building" },
+        { link: "/", name: "Tin tức - Sự kiện" },
+    )
+section.news-list(class="py-20 max-lg:py-10")
+    .container 
+        +news()
+section.news-list-2(class="py-20 max-lg:py-10")
+    .container 
+        .news-lists(class="grid grid-cols-3 gap-10 max-md:grid-cols-1 max-lg:grid-cols-2") 
+            +newsLeft("./img/news.png", "01/10/2024", "Tin dự án" , "Chung tay hành động vì một môi trường làm việc an toàn", "Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.")
+            +newsLeft("./img/news.png", "01/10/2024", "Tin dự án" , "Chung tay hành động vì một môi trường làm việc an toàn", "Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.")
+            +newsLeft("./img/news.png", "01/10/2024", "Tin dự án" , "Chung tay hành động vì một môi trường làm việc an toàn", "Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.")
+            +newsLeft("./img/news.png", "01/10/2024", "Tin dự án" , "Chung tay hành động vì một môi trường làm việc an toàn", "Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.")
+            +newsLeft("./img/news.png", "01/10/2024", "Tin dự án" , "Chung tay hành động vì một môi trường làm việc an toàn", "Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.")
+            +newsLeft("./img/news.png", "01/10/2024", "Tin dự án" , "Chung tay hành động vì một môi trường làm việc an toàn", "Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.")
+        .project-3-pagination(class="mt-10 flex items-center justify-center gap-6") 
+            span.active 1
+            span 2
+            span 3

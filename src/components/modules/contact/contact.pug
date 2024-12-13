@@ -1,0 +1,60 @@
+.breadcum(class="mt-32")
+    +breadcum(
+        { link: "", icon: "fa-thin fa-building" },
+        { link: "/", name: "Tuyển dụng" },
+    )
+section.contact(class="py-15") 
+    .container 
+        .contact-main(class="flex gap-20 max-lg:flex-col max-lg:gap-5") 
+            .contact-left(class="w-[40%] max-lg:w-full")
+                +title("Liên hệ")
+                .contact-lists(class="mt-6 max-md:flex-col gap-5") 
+                    .contact-item(class="mb-5")
+                        .contact-icon 
+                            i.fa-regular.fa-location-dot
+                        .contactForm(class="flex flex-col gap-5")
+                            .contactForm-item 
+                                h3 ĐỊA CHỈ VĂN PHÒNG
+                                p Tầng 19 khu văn phòng, Tòa nhà Indochina, số 4 Nguyễn Đình Chiểu, Phường Đa Kao, Quận 1, Tp.HCM
+                            .contactForm-item 
+                                h3 VĂN PHÒNG ĐẠI DIỆN
+                                p 52 – 54 Đường số 18, P. An Phú, TP. Thủ Đức, TP.HCM
+                    .contact-item(class="mb-5") 
+                        .contact-icon 
+                            i.fa-regular.fa-phone
+                        .contactForm(class="") 
+                            h3 ĐIỆN THOẠI
+                            p +84 28 2253 7288          
+                    .contact-item 
+                        .contact-icon 
+                            i.fa-regular.fa-location-dot
+                        .contactForm 
+                            h3 EMAIL
+                            p info@megabuild.com
+                .contact-map(class="mt-5") 
+                    img(src="./img/map-contact.png", alt="" class="w-full")
+            .contact-right(class="w-[60%] p-12 max-md:p-5 text-2xl max-lg:w-full") 
+                p(class="text-neutral-900 text-lg font-normal rem:leading-[26px] text-center mb-8") Mọi sự hợp tác tốt đẹp đều bắt đầu từ một cuộc trò chuyện. Hãy liên hệ với chúng tôi, mọi mong muốn của bạn sẽ được lắng nghe.
+                form.form-contact(action="" class="flex gap-5 flex-col") 
+                    .form-input(class="w-full") 
+                        input(type="text" placeholder="Họ và tên")
+                    .form-group 
+                        .form-field-contact
+                            input(type="text" placeholder="Email")
+                        .form-field-contact
+                            input(type="text" placeholder="Số điện thoại")
+                    .form-group 
+                        .form-field-contact
+                            input(type="text" placeholder="Địa chỉ")
+                        .form-field-contact
+                            input(type="text" placeholder="Tiêu đề")
+                    .form-textarea(class="w-full") 
+                        textarea(name="Noi dung" class="w-full border border-neutral-300 pl-5  px-6 py-3 bg-Neutral/White rem:text-[16px] leading-6 font-normal text-neutral-500") Nội dung 
+                    .form-capcha(class="mt-5 flex items-center justify-between") 
+                        .form-capcha-img 
+                            img(src="./img/capcha.png", alt="")
+                        .form-btn 
+                            +button("Gửi", "extraClass", "")
+
+
+

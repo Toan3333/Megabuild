@@ -1,0 +1,27 @@
+@layer components
+	.item-comp
+		@apply flex
+	
+		
+	.project-3-image-content-item 
+		@apply rem:text-[12px] leading-5 font-normal
+	.project-3-image-content-item > h3 
+		@apply text-sm font-bold rem:leading-[22px]
+	.project-3-content > h3 
+		@apply text-xl font-bold text-Primary/Blue leading-7 mb-3 cursor-pointer max-md:rem:text-[16px] max-md:leading-5
+		&.active
+			@apply text-Primary/Red
+		&:hover
+			@apply text-Primary/Red
+	.service-similar-image:hover .service-similar-icon.is-show
+		opacity: 1
+		visibility: visible
+	.service-similar-icon
+		opacity: 0
+		visibility: hidden
+		transition: all 0.2s ease
+
+	@media screen and (max-width: 1023.98px)
+		.news-col-flex
+			display: unset !important
+			width: 100%

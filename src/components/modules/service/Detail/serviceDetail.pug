@@ -1,0 +1,57 @@
+.breadcum(class="mt-32")
+    +breadcum(
+        { link: "", icon: "fa-thin fa-building" },
+        { link: "/serviceList.html", name: "Dịch vụ" },
+        { link: "/serviceList.html", name: "Tổng thầu xây dựng" },
+    )
+section.service-detail(class="mt-3 relative")
+    .service-icon(class="absolute top-0") 
+        img(src="./img/logo-service.png", alt="" class="w-full bg-cover rem:h-[600px]")
+    .container 
+        .service-heading(class="p-10 rounded-b-xl bg-Second/950 text-Neutral/White flex items-center justify-between rem:gap-[280px] mb-10")
+            .col-left(class="w-[30%]") 
+                +title("Tổng thầu xây dựng", "text-white")
+            .col-right(class="w-[70%]") 
+                p(class="text-lg font-normal rem:leading-[26px]") Với nguồn lực sẵn có của công ty, chúng tôi quản lý và phối hợp các nhà thầu phụ cũng như nhà cung cấp một cách chuyên nghiệp, để đạt được mục tiêu cuối cùng của dự án.
+        .service-detail-2(class="pb-10")
+            h3(class="text-32 font-medium leading-10 text-Primary/Blue text-center font-oswald mb-10") Chức năng của tổng thầu xây dựng
+            .service-list(class=" grid grid-cols-2 gap-10") 
+                +serviceItem("./img/service-1.png", "Quản lý tiến độ, chất lượng và chi phí của dự án.")
+                +serviceItem("./img/service-2.png", "Quản lý vệ sinh an toàn lao động tại công trường,phòng tránh các tai nạn có thể gây ảnh hưởng đến sức khỏe, tiến độ, chi phí của dự án.")
+                +serviceItem("./img/service-3.png", "Hỗ trợ Chủ Đầu Tư làm việc với các cơ quan chức năng để đạt được các chứng chỉ cần thiết đưa dự án vào sử dụng.")
+                +serviceItem("./img/service-4.png", "Thực hiện thi công các dự án đặc biệt các dự án có yêu cầu cao về kỹ thuật.")
+section.certificate(class="py-15 bg-neutral-50")
+    .container(class="relative") 
+        +titleHeading("Chứng chỉ năng lực hoạt động xây dựng")
+        .slide(class="relative overflow-visible")
+            .swiper.swiper-certificate
+                .swiper-wrapper
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-1.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-1.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-2.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-3.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-4.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-5.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-3.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-4.png")
+            button.certificate-prev(class="absolute top-1/2 transform -translate-y-1/2  text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer -left-[3.5rem] z-30")
+                i.fa-light.fa-arrow-left-long
+            button.certificate-next(class="absolute top-1/2 transform -translate-y-1/2 text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer z-30 -right-[3.5rem]")
+                i.fa-light.fa-arrow-right-long
+section.form-contact(class="py-20") 
+    .container 
+        +formContact()
+section.service-similar  
+    +titleHeading("Dịch vụ khác")
+    .service-similar-list(class="grid grid-cols-3 rem:gap-[2px]") 
+        +serviceSimilarItem("./img/service-similar-1.png", "Tổng thầu xây dựng")
+        +serviceSimilarItem("./img/service-similar-2.png", "Tư vấn thiết kế")
+        +serviceSimilarItem("./img/service-similar-3.png", "Rà soát thiết kế")

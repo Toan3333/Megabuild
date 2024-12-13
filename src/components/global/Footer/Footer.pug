@@ -1,0 +1,55 @@
+footer.footer(class="py-10 bg-neutral-50")
+    .social-fixed(class="fixed bottom-0 right-0 z-50 max-md:bottom-10")
+        .social-fixed-main(class="flex flex-col gap-3 py-15") 
+            .social-icon.active(class="active w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/2 text-Neutral/White inline-flex items-center justify-center text-2xl relative group p-6")
+                i.fa-regular.fa-arrow-up-to-line                 
+            .social-icon(class="w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer")
+                i.fa-sharp.fa-solid.fa-pen-to-square
+            .social-icon(class="w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer")
+                i.fa-solid.fa-phone
+            .social-icon(class="w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer")
+                i.fa-solid.fa-envelope
+                
+    .container
+        .footer-logo(class="mb-6") 
+            a(href="#")
+                img(src="./img/Logo-footer.png", alt="") 
+        .footer-list(class="max-md:grid-cols-1 max-lg:grid-cols-2") 
+            .footer-col(class="flex flex-col gap-6") 
+                h1(class="font-oswald text-5xl rem:leading-[48px] text-Second/950 font-medium max-md:text-3xl") Luôn sẵn sàng hỗ trợ và đồng hành cùng bạn
+                p(class="text-[1rem] font-normal leading-6 text-neutral-900") Đăng ký nhận bản tin để cập nhật những thông tin, sự kiện mới nhất từ chúng tôi.
+                form(action="")
+                    .form-email(class="w-full flex items-center text-[1rem] leading-6 text-Neutral/500 main pb-2 border-b border-b-Neutral/500 main") 
+                        input(type="text" placeholder="Email" class="w-full bg-transparent")
+                        i.fa-solid.fa-paper-plane-top
+                .copy-right 
+                    p(class="rem:text-[14px] font-normal rem:leading-[18px] text-neutral-950") © 2024 Megabuild. All Rights Reserved. Thiết kế web bởi Cánh Cam
+            .footer-col(class="flex flex-col gap-10")
+                .footer-col-item(class="flex flex-col gap-2") 
+                    h3 Văn phòng Megabuild
+                    p(class="text-justify") 52 – 54 Đường số 18, P. An Phú, TP. Thủ Đức, TP.HCM
+                .footer-map 
+                    img(src="./img/map.png", alt="")
+            .footer-col
+                .footer-col-item 
+                    h3.title Bạn cần tư vấn ?                    
+                .footer-col-item(class="flex items-center gap-3 pb-6 border-b border-b-slate-900") 
+                    i.fa-sharp.fa-solid.fa-phone-volume
+                    span(class="text-32 text-Primary/Red leading-10 font-bold font-oswald") +84 28 2253 7288
+                .footer-col-item(class="flex items-center gap-3 mt-6")  
+                    i.fa-sharp.fa-solid.fa-envelope
+                    span(class="text-[1rem] text-Second/950 font-medium leading-6") info@megabuild.com
+            .footer-col 
+                ul.footer-nav(class="flex flex-col gap-6") 
+                    li 
+                        a(href="#") Giới thiệu
+                    li 
+                        a(href="#") Dịch vụ
+                    li 
+                        a(href="#") Dự án
+                    li 
+                        a(href="#") Tin tức - Sự kiện
+                    li 
+                        a(href="#") Tuyển dụng
+                    li 
+                        a(href="#") Liên hệ  

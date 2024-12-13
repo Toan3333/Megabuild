@@ -1,0 +1,94 @@
++breadcum(
+    { link: "", icon: "fa-thin fa-building" },
+    { link: "/du-an", name: "Dự án" },
+    { link: "/du-an/chi-tiet", name: "Dự án Khu dân cư " }
+)
+section.project-detail 
+    .container
+        .heading-title(class="mt-10")
+            +title("SUNCASA CENTRAL PHASE 2B")
+        .swiper.swiper-detail(class="mt-6") 
+            .swiper-wrapper 
+                .swiper-slide 
+                    img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                .swiper-slide 
+                    img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                .swiper-slide 
+                    img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                .swiper-slide 
+                    img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                .swiper-slide 
+                    img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                .swiper-slide 
+                    img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+        .slide-thumb(class="relative mt-6")
+            .swiper.swiper-thumb(class="max-w-[900px] mx-auto") 
+                .swiper-wrapper 
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+                    .swiper-slide 
+                        img(src="./img/project-detail-1.png", alt="" class="rounded-lg w-full")
+            button.custom-prev(class="absolute top-1/2 transform -translate-y-1/2  text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer left-[1rem] z-30")
+                i.fa-light.fa-arrow-left-long
+            button.custom-next(class="absolute top-1/2 transform -translate-y-1/2 text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer z-30 right-[1rem] ")
+                i.fa-light.fa-arrow-right-long
+section.project-detail-content(class="py-20") 
+    .container
+        .project-main(class="flex gap-10") 
+            .project-flex(class="w-[68%] flex flex-col gap-2") 
+                p Lorem ipsum dolor sit amet consectetur. Tincidunt tempor id cras volutpat porta amet cursus. Neque sit blandit leo vitae faucibus potenti mi. Massa sed porttitor adipiscing est in nunc. Nunc aliquam ipsum lacus pellentesque amet quis. Vestibulum tristique felis sollicitudin mattis porta suspendisse viverra fermentum. Morbi tempor lobortis mi vulputate leo sodales. Nunc elit eget sed ridiculus vel cras tempor. Lectus elit et blandit cursus scelerisque. Convallis quam interdum et potenti euismod faucibus.Lorem ipsum dolor sit amet consectetur. Tincidunt tempor id cras volutpat porta amet cursus. Neque sit blandit leo vitae faucibus potenti mi. Massa sed porttitor adipiscing est in nunc. Nunc aliquam ipsum lacus pellentesque amet quis. Vestibulum tristique felis sollicitudin mattis porta suspendisse viverra fermentum. Morbi tempor lobortis mi vulputate leo sodales. Nunc elit eget sed ridiculus vel cras tempor. Lectus elit et blandit cursus scelerisque. Convallis quam interdum et potenti euismod faucibus.
+                p Lorem ipsum dolor sit amet consectetur. Tincidunt tempor id cras volutpat porta amet cursus. Neque sit blandit leo vitae faucibus potenti mi. Massa sed porttitor adipiscing est in nunc. 
+                p Lorem ipsum dolor sit amet consectetur. Tincidunt tempor id cras volutpat porta amet cursus. Neque sit blandit leo vitae faucibus potenti mi. Massa sed porttitor adipiscing est in nunc. Nunc aliquam ipsum lacus pellentesque amet quis. Vestibulum tristique felis sollicitudin mattis porta suspendisse viverra fermentum. Morbi tempor lobortis mi vulputate leo sodales. Nunc elit eget sed ridiculus vel cras tempor. Lectus elit et blandit cursus scelerisque. Convallis quam interdum et potenti euismod faucibus.
+            .project-box(class="w-[32%] p-10 rounded bg-Primary/Blue text-Neutral/White") 
+                h1(class="rem:text-[24px] font-bold leading-8 mb-8") Tổng quan dự án
+                .project-box-list(class="flex flex-col gap-5") 
+                    .project-box-item
+                        span Quy mô dự án :
+                        h2 99 Căn hộ biệt thự song lập và đơn lập
+                    .line(class="border-t border-t-Neutral/White opacity-20")
+                    .project-box-item 
+                        span Quy mô dự án :
+                        h2 99 Căn hộ biệt thự song lập và đơn lập
+                    .line(class="border-t border-t-Neutral/White opacity-20")
+                    .project-box-item 
+                        span Quy mô dự án :
+                        h2 99 Căn hộ biệt thự song lập và đơn lập
+                    .line(class="border-t border-t-Neutral/White opacity-20")
+                    .project-box-item 
+                        span Quy mô dự án :
+                        h2 99 Căn hộ biệt thự song lập và đơn lập
+section.form-contact(class="pb-20") 
+    .container 
+        +formContact()
+section.project-similar(class="py-20") 
+    .container(class="relative") 
+        .heading-title(class="text-center") 
+            +title("Dự án khác")
+        .swiper.swiper-project(class="mt-10") 
+            .swiper-wrapper 
+                .swiper-slide
+                    +project("./img/project-similar-1.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ")
+                .swiper-slide
+                    +project("./img/project-similar-1.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ")
+                .swiper-slide
+                    +project("./img/project-similar-1.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ")
+                .swiper-slide
+                    +project("./img/project-similar-1.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ")
+                .swiper-slide
+                    +project("./img/project-similar-1.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ")
+        button.project-btn-prev(class="absolute top-1/2 transform -translate-y-1/2  text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer -left-[2.5rem] z-30")
+            i.fa-light.fa-arrow-left-long
+        button.project-btn-next(class="absolute top-1/2 transform -translate-y-1/2 text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer z-30 -right-[2.5rem] ")
+            i.fa-light.fa-arrow-right-long

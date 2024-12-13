@@ -1,0 +1,104 @@
+.breadcum(class="mt-32")
+    +breadcum(
+        { link: "", icon: "fa-thin fa-building" },
+        { link: "/", name: "Tuyển dụng" },
+    )
+section.recruitment-detail-1(class="py-20") 
+    .container 
+        .recruitment-detail-main(class="flex gap-10 max-lg:flex-col") 
+            .recruitment-detail-left(class="w-[70%] max-lg:w-full")
+                h1(class="text-32 leading-10 font-bold text-Second/950 pb-3 border-b border-b-neutral-200") Nhân viên Marketing
+                .recruitment-detail-tabs(class="flex gap-10 p-8 max-md:flex-col max-md:p-4") 
+                    .recruitment-detail-tab-left(class="w-2/4 flex flex-col gap-5 max-lg:w-full")
+                        .recruitment-detail-tab-item
+                            .recruitment-location Vị trí 
+                            .recruitment-location-position Trợ lý Marketing
+                        .recruitment-detail-tab-item
+                            .recruitment-location Chức vụ 
+                            .recruitment-location-position Nhân viên
+                        .recruitment-detail-tab-item
+                            .recruitment-location Yêu cầu bằng cấp
+                            .recruitment-location-position Cao đẳng chuyên ngành
+                        .recruitment-detail-tab-item.border-none
+                            .recruitment-location Mức lương
+                            .recruitment-location-position Thương lượng
+                    .recruitment-detail-tab-right(class="w-2/4 flex flex-col gap-5 max-lg:w-full")
+                        .recruitment-detail-tab-item
+                            .recruitment-location Số lượng ứng tuyển
+                            .recruitment-location-position 02
+                        .recruitment-detail-tab-item
+                            .recruitment-location Địa điểm làm việc
+                            .recruitment-location-position TP. Hồ Chí Minh
+                        .recruitment-detail-tab-item
+                            .recruitment-location Giới tính
+                            .recruitment-location-position Không yêu cầu
+                        .recruitment-detail-tab-item.border-none
+                            .recruitment-location Hạn nộp hồ sơ
+                            .recruitment-location-limit 20.06.2024
+                .content(class="mt-8 p-8") 
+                    h3(class="rem:text-[24px] font-bold leading-8 text-Second/950 font-oswald pb-3 border-b border-b-neutral-200") Mô tả công việc
+                    .content-list(class="mt-5 flex flex-col gap-3") 
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                .content(class="p-8") 
+                    h3(class="rem:text-[24px] font-bold leading-8 text-Second/950 font-oswald pb-3 border-b border-b-neutral-200") Yêu cầu công việc
+                    .content-list(class="mt-5 flex flex-col gap-3")  
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                .content(class="p-8") 
+                    h3(class="rem:text-[24px] font-bold leading-8 text-Second/950 font-oswald pb-3 border-b border-b-neutral-200") Chế độ phúc lợi
+                    .content-list(class="mt-5 flex flex-col gap-3")  
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+                        .content-item
+                            i.fa-duotone.fa-solid.fa-circle
+                            p Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án
+            .recruitment-detail-right(class="w-[30%] max-lg:w-full") 
+                .button(class="flex flex-col gap-3 p-6") 
+                    +button("Ứng tuyển ngay", "button-apply")
+                    +button("Tải hồ sơ ứng tuyển", "button-dowload", "fa-light fa-file-arrow-down")
+                .box-info(class="mt-10 max-lg:border max-lg:border-neutral-300") 
+                    h2.box-info-heading(class="px-6 py-5 bg-Primary/Blue text-Neutral/White leading-8 font-bold font-manrope") Vị trí tuyển dụng khác
+                    .box-info-item 
+                        h3 Nhân viên Marketing
+                        .box-info-date 
+                            i.fa-regular.fa-calendar-star
+                            span.title Hạn nộp hồ sơ
+                            span.date 20.06.2024
+                    .box-info-item 
+                        h3 Nhân viên Marketing
+                        .box-info-date 
+                            i.fa-regular.fa-calendar-star
+                            span.title Hạn nộp hồ sơ
+                            span.date 20.06.2024
+                    .box-info-item 
+                        h3 Nhân viên Marketing
+                        .box-info-date 
+                            i.fa-regular.fa-calendar-star
+                            span.title Hạn nộp hồ sơ
+                            span.date 20.06.2024
+                    .box-info-item 
+                        h3 Nhân viên Marketing
+                        .box-info-date 
+                            i.fa-regular.fa-calendar-star
+                            span.title Hạn nộp hồ sơ
+                            span.date 20.06.2024
+

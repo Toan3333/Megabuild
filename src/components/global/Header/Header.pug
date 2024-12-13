@@ -1,0 +1,74 @@
+header.header(class="fixed top-0 w-full py-5 shadow-Background Blur bg-linear-1 z-50")
+    form.search-bar-container(action="")
+        .searchbox(class="w-full relative cursor-pointer") 
+            input#search-btn(type="text" class="searchinput" placeholder="Tìm kiếm..." class="px-4 py-2 rounded bg-Neutral/White shadow-lg w-full cursor-pointer")
+            .search-icon(class="absolute top-2/4 -translate-y-2/4 right-0 pr-5 text-Primary/Blue")
+                i.fa-sharp.fa-regular.fa-magnifying-glass
+    .container 
+        .header-main(class="flex items-center justify-between")
+            .header-left(class="flex items-center gap-15 max-md:gap-[3.2rem]")
+                .header-toggle(class="text-32 hidden max-lg:block max-md:text-3xl") 
+                    i.fa-light.fa-bars
+                .header-logo(class="max-md:ml-[4rem] max-lg:ml-[242px]") 
+                    a(href="#")
+                        img(src="./img/Logo.png", alt="")
+                .header-nav(class="max-lg:hidden") 
+                    ul.header-menu(class="flex items-center justify-between rem:gap-[26px]") 
+                        li 
+                            a(href="./about.html") Giới thiệu
+                        li 
+                            a(href="./serviceList.html") Dịch vụ
+                        li(class="flex items-center relative dropdown-button") 
+                            a(href="#" class="dropdown-btn") Dự án
+                                i(class="").fa-sharp.fa-solid.fa-caret-down
+                            .dropdowm-nav(class="absolute top-0 rem:w-[300px] bg-Primary/Blue p-6 rounded mt-9") 
+                                ul.dropdowm-menu(class="flex flex-col gap-4") 
+                                    li 
+                                        a(href="#") Dự án Dân dụng 
+                                    li 
+                                        a(href="./projectList.html") Dự án công nghiệp
+                                    li 
+                                        a(href="#") Dự án hạ tầng kỹ thuật
+                        li 
+                            a(href="./newsList.html") Tin tức - Sự kiện
+                        li 
+                            a(href="./recruitmentList.html") Tuyển dụng  
+                        li 
+                            a(href="./contact.html") Liên hệ
+            .header-right(class="flex items-center") 
+                .header-language(class="flex items-center gap-3") 
+                    a(href="#")
+                        img(src="./img/Vn.png", alt="") 
+                    .header-language-dropdown(class="flex items-center gap-1") 
+                        span(class="text-lg uppercase font-medium text-Second/950 rem:leading-[26px]") VN 
+                        i.fa-sharp.fa-solid.fa-caret-down
+                .header-search(class="ml-6 text-Second/950 rem:text-[24px] font-normal cursor-pointer") 
+                    i.fa-sharp.fa-regular.fa-magnifying-glass
+.overlay
+section.header-menu-mobile(class="pt-5 px-4 hidden max-md:block") 
+    ul 
+        li 
+            a(href="#") Giới thiệu
+        li 
+            a(href="#") Dịch vụ
+        li(class="flex items-center relative dropdown-button") 
+            a(href="#" class="dropdown-btn") Dự án
+                i(class="").fa-sharp.fa-solid.fa-caret-down
+            .dropdowm-nav(class="absolute top-0 rem:w-[300px] bg-Primary/Blue p-6 rounded mt-9")
+                ul.dropdowm-menu(class="flex flex-col gap-4") 
+                    li 
+                        a(href="#") Dự án Dân dụng 
+                    li 
+                        a(href="./projectList.html") Dự án công nghiệp
+                    li 
+                        a(href="#") Dự án hạ tầng kỹ thuật
+        li 
+            a(href="#") Tin tức - Sự kiện 
+        li 
+            a(href="#") Tuyển dụng
+        li 
+            a(href="#") Liên hệ 
+.backdrop.backdrop-search
+
+
+

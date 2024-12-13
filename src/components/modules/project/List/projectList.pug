@@ -1,0 +1,48 @@
+.banner(class="max-md:pt-[7.6rem]") 
+    +banner("./img/banner-duan.png")
++breadcum(
+    { link: "", icon: "fa-thin fa-building" },
+    { link: "/du-an", name: "Dự án" },
+
+)
+
+section.project-1(class="pt-20 pb-10 max-lg:py-10") 
+    .container 
+        .project-main(class="flex items-center justify-between max-md:flex-col max-md:gap-5") 
+            +title("Dự án")
+            .project-items(class="flex items-center justify-between gap-4")
+                .link(class="pr-4 border-r border-r-neutral-200")  
+                    a(href="#" class="active")  Tất cả
+                .link(class="pr-4 border-r border-r-neutral-200")  
+                    a(href="#")  Dự án Dân dụng
+                .link(class="pr-4 border-r border-r-neutral-200") 
+                    a(href="#")  Dự án Công Nghiệp
+                .link
+                    a(href="#")  Dự án Hạ tầng kỹ thuật
+section.project-2(class="py-10 max-md:py-5")
+    .container 
+        .project-2-main(class="flex max-md:flex-col max-lg:items-center")
+            .project-2-content(class="max-w-[360px] w-full py-10 px-8 bg-neutral-50 flex flex-col items-center justify-center max-md:px-5") 
+                .project-2-wrapper(class="flex flex-col gap-7 max-md:gap-5")
+                    h4.title(class="text-xl font-medium leading-7 text-Second/950 font-oswald ") Dự án công nghiệp
+                    h3(class="text-32 font-bold leading-10 text-Primary/Blue max-md:text-3xl") Suncasa central phase 2B
+                    p(class="text-[1rem] leading-6 font-normal text-Neutral/Black") Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. Dự án mô phỏng thành phố tương lai, ứng dụng đầy đủ các công nghệ hiện đại, hướng đến giá trị của cuộc sống trường tồn và hạnh phúc giữa môi trường sống trong lành và tiện nghi. 
+                    .project-2-bottom(class="flex items-center gap-3") 
+                        a(href="#" class="font-exo text-[1rem] leading-6 font-bold text-Second/950") KHÁM PHÁ DỰ ÁN
+                        i.fa-light.fa-arrow-right-long
+            .project-2-image(class="w-full") 
+                a(href="./projectDetail.html" class="img-ratio ratio:pt-[585_1040]")
+                    img(src="./img/project-1.png", alt="" class="w-full h-full")
+section.project-3(class="py-20 max-lg:py-10") 
+    .container 
+        .project-3-list(class="grid grid-cols-3 gap-10 max-md:grid-cols-1 max-md:gap-5 max-lg:grid-cols-2") 
+            +project("./img/project-2.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ") 
+            +project("./img/project-2.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ") 
+            +project("./img/project-2.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ")
+            +project("./img/project-2.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ") 
+            +project("./img/project-2.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ") 
+            +project("./img/project-2.png", "Club house Wynham Phú Quốc", "Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. ") 
+        .project-3-pagination(class="mt-10 flex items-center justify-center gap-6") 
+            span.active 1
+            span 2
+            span 3

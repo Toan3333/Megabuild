@@ -1,0 +1,20 @@
+.project-item
+	background-color: transparent
+	transition: background-color 0.3s ease, color 0.3s ease
+.project-2-wrapper > h4
+	text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.10)
+.project-2-wrapper > h3
+	text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.10)
+.project-3-pagination > span 
+	@apply w-12 h-12 rounded-rounded-9 border border-Primary/Blue inline-flex items-center justify-center text-lg font-bold rem:leading-[26px] text-Primary/Blue cursor-pointer transition-all ease-linear
+.project-3-pagination > span
+	&:hover
+		@apply bg-Primary/Red text-Neutral/White border-transparent
+.project-3-pagination > span.active
+	@apply bg-Primary/Red text-Neutral/White border-transparent
+
+.link > a 
+	@apply transition-all hover:text-Primary/Red rem:text-[16px] font-normal leading-6 block text-neutral-500 hover:border-b hover:border-b-Primary/Red
+	&.active
+		@apply text-Primary/Red border-b border-b-Primary/Red
+@media screen and (max-width: 767.98px)

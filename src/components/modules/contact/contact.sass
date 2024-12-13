@@ -1,0 +1,22 @@
+.contact-item
+	@apply flex gap-4
+.contact-icon
+	@apply text-lg leading-6 font-normal text-Second/950
+.contact-content-item 
+	h3
+		@apply rem:text-[16px] leading-6 font-bold text-Second/950 mb-[6px]
+	p
+		@aply rem:text-[16px] bg-neutral-500 leading-6 font-bold text-Second/950 mb-[6px]
+.contact-content
+	@apply flex flex-col gap-4
+.form-input > input
+	@apply w-full px-6 py-3 border border-neutral-300 bg-Neutral/White rem:text-[16px] leading-6 font-normal
+.form-group
+	@apply flex items-center gap-5
+.form-field-contact
+	@apply w-full
+.form-field-contact > input
+	@apply w-full px-6 py-3 border border-neutral-300 bg-Neutral/White rem:text-[16px] leading-6 font-normal
+@media screen and (max-width: 767.98px)
+	.form-group
+		@apply flex-col

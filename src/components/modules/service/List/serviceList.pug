@@ -1,0 +1,27 @@
+.banner(class="max-md:pt-[7.6rem]") 
+    +banner("./img/banner-service.png")
++breadcum(
+    { link: "", icon: "fa-thin fa-building" },
+    { link: "/du-an", name: "Dịch vụ" },
+)
+section.service(class="py-20") 
+    .heading(class="mb-15") 
+        +title("Dịch vụ", "text-center")
+    .service-wrapper(class="flex flex-col gap-10")
+        .service-main(class="relative") 
+            a(href="#" class="img-ratio ratio:pt-[620_1920]")
+                img(src="./img/service-bg-1.png", alt="" class="w-full h-full object-cover") 
+            .service-content(class="absolute top-0 left-0 rem:max-w-[820px] h-full bg-Second/950 opacity-80 text-Neutral/White rem:pl-[260px] pr-20 flex flex-col justify-center") 
+                h3(class="text-32 font-medium leading-10 font-oswald mb-5") Tổng thầu xây dựng
+                p(class="text-lg  font-normal rem:leading-[26px] mb-10") Với nguồn lực sẵn có của công ty, chúng tôi quản lý và phối hợp các nhà thầu phụ cũng như nhà cung cấp một cách chuyên nghiệp, để đạt được mục tiêu cuối cùng của dự án.
+                .btn(class="block")
+                    +button("Tìm Hiểu Thêm", "./serviceDetail.html", "service-btn", "")
+        .service-main(class="relative") 
+            a(href="#" class="img-ratio ratio:pt-[620_1920]")
+                img(src="./img/banner-service-2.png", alt="" class="w-full h-full object-cover") 
+            .service-content(class="absolute top-0 right-0 rem:max-w-[820px] h-full bg-Second/950 opacity-80 text-Neutral/White rem:pr-[260px] pl-20 flex flex-col justify-center") 
+                h3(class="text-32 font-medium leading-10 font-oswald mb-5") Tổng thầu xây dựng
+                p(class="text-lg  font-normal rem:leading-[26px] mb-10") Với nguồn lực sẵn có của công ty, chúng tôi quản lý và phối hợp các nhà thầu phụ cũng như nhà cung cấp một cách chuyên nghiệp, để đạt được mục tiêu cuối cùng của dự án.
+                .btn(class="block")
+                    +button("Tìm Hiểu Thêm", "./serviceDetail.html", "service-btn", "")
+            
