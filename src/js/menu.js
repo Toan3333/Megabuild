@@ -18,7 +18,6 @@ export function dropDown() {
 
     const currentUrl = window.location.href;
 
-    // Duyệt qua tất cả các thẻ a
     menuLinks.forEach((link) => {
       link.classList.remove("active");
 
@@ -29,24 +28,19 @@ export function dropDown() {
       }
     });
 
-    // Quản lý menu và overlay
-    const toggle = document.querySelector(".header-toggle"); // Nút toggle
-    const menu = document.querySelector(".header-menu-mobile"); // Menu
-    const overlay = document.querySelector(".overlay"); // Nền đen mờ
+    const toggle = document.querySelector(".header-toggle");
+    const menu = document.querySelector(".header-menu-mobile");
+    const overlay = document.querySelector(".overlay");
 
     if (toggle && menu && overlay) {
-      // Hiển thị hoặc ẩn menu và overlay
       toggle.addEventListener("click", function () {
         const isMenuVisible = menu.classList.contains("is-show");
 
-        // Toggle hiển thị menu
         menu.classList.toggle("is-show", !isMenuVisible);
 
-        // Toggle hiển thị overlay
         overlay.classList.toggle("is-show", !isMenuVisible);
       });
 
-      // Ẩn menu khi nhấn vào overlay
       overlay.addEventListener("click", function () {
         menu.classList.remove("is-show");
         overlay.classList.remove("is-show");
