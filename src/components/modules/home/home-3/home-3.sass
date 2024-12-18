@@ -1,0 +1,51 @@
+.tabs-nav
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	overflow: auto
+	max-width: 100%
+	white-space: nowrap
+	> * + *
+		margin-left: rr(20px)
+		padding-left: rr(20px)
+		border-left: 1px solid #DCDCDC
+	li
+		a
+			display: inline-flex
+			padding: rr(8px) 0
+			border-bottom: 1px solid transparent
+		&.active
+			a
+				@apply border-Primary/Red text-Primary/Red
+	&.is-white
+		> * + *
+			border-left: 1px solid rgba(#fff, 0.2)
+		li.active
+			a
+				border-bottom: 1px solid #fff
+				@apply text-white
+
+.home-project-item
+	display: grid
+	grid-template-columns: calc(360 / 1400 * 100%) 1fr
+	background-color: #fff
+	border-radius: rr(12px)
+	overflow: hidden
+	transition: opacity 0.3s ease-in-out
+	@media (max-width: 1024.98px)
+		grid-template-columns: 1fr
+	&-content
+		padding: rr(32px)
+		@media (max-width: 1024.98px)
+			padding: rr(24px)
+	&-img
+		figure
+			+img-ratio(calc(585 / 1040))
+
+.home-3
+	.swiper-slide
+		.home-project-item
+			opacity: 0.5
+		&-active
+			.home-project-item
+				opacity: 1

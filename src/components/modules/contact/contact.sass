@@ -2,21 +2,29 @@
 	@apply flex gap-4
 .contact-icon
 	@apply text-lg leading-6 font-normal text-Second/950
-.contact-content-item 
+.contact-content-item
 	h3
 		@apply rem:text-[16px] leading-6 font-bold text-Second/950 mb-[6px]
 	p
 		@aply rem:text-[16px] bg-neutral-500 leading-6 font-bold text-Second/950 mb-[6px]
 .contact-content
 	@apply flex flex-col gap-4
-.form-input > input
+.contact-right
+	box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.08)
+.form-input input
 	@apply w-full px-6 py-3 border border-neutral-300 bg-Neutral/White rem:text-[16px] leading-6 font-normal
 .form-group
 	@apply flex items-center gap-5
 .form-field-contact
 	@apply w-full
-.form-field-contact > input
+.form-field-contact input
 	@apply w-full px-6 py-3 border border-neutral-300 bg-Neutral/White rem:text-[16px] leading-6 font-normal
+.form-textarea textarea
+	@apply w-full border border-neutral-300 pl-5  px-6 py-3 bg-Neutral/White rem:text-[16px] leading-6 font-normal text-neutral-500
 @media screen and (max-width: 767.98px)
 	.form-group
 		@apply flex-col
+
+.contact-map
+	iframe
+		@apply w-full rem:h-[300px]

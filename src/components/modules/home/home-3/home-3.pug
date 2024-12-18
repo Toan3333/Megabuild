@@ -1,0 +1,36 @@
+section.home-3(class="py-10 lg:py-20 bg-cover bg-center overflow-hidden" setBackground="./img/home-bg.jpg")
+    .container
+        h2(class="text-5xl font-medium leading-snug text-white  font-oswald max-md:text-3xl text-center mb-8") Dự án nổi bật
+        .tabs.text-center(data-tabs-container="#tabs-content")
+            ul(class="mb-10 text-white is-white").tabs-nav
+                li.tabs-item
+                    a(href="#project-tab-1") Tất cả
+                li.tabs-item
+                    a(href="#project-tab-2") Dự án công nghiệp
+                li.tabs-item
+                    a(href="#project-tab-3") Dự án khu dân cư
+                li.tabs-item
+                    a(href="#project-tab-4") Dự án nghỉ dưỡng
+                li.tabs-item
+                    a(href="#project-tab-5") Dự án thương mại
+                li.tabs-item
+                    a(href="#project-tab-6") Dự án hạ tầng kỹ thuật
+        #tabs-content
+            .tab-content#project-tab-1
+                .swiper-single-project
+                    .swiper(class="overflow-visible")
+                        .swiper-wrapper
+                            - for (var i = 0; i < 6; i++)
+                                .swiper-slide
+                                    .home-project-item
+                                        .home-project-item-content(class="flex flex-col items-start lg:gap-7 gap-4 justify-center")
+                                            div(class="text-xl font-medium text-Second/950 font-oswald") Lorem ipsum dolor sit amet
+                                            div(class="text-32 leading-snug text-Primary/Blue font-medium font-oswald") Club house Wynham Phú Quốc
+                                            .text-base Golden City tiên phong mang tới chuẩn mực sống trong việc xây dựng cộng đồng văn minh, gắn kết và lan tỏa những giá trị sống tốt đẹp. Dự án mô phỏng thành phố tương lai, ứng dụng đầy đủ các công nghệ hiện đại, hướng đến giá trị của cuộc sống trường tồn và hạnh phúc giữa môi trường sống trong lành và tiện nghi. 
+                                            a(href="#" class="flex items-center gap-3 text-base font-bold text-Second/950 uppercase") Khám phá dự án 
+                                                i.fal.fa-arrow-right
+                                        .home-project-item-img
+                                            figure 
+                                                img(src="http://unsplash.it/1040/585?random&gravity=center" alt="project-1")
+                .text-center.mt-10
+                    a(href="#" class="btn btn-primary") Tìm Hiểu Thêm

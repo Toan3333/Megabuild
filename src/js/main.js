@@ -11,6 +11,11 @@ import { header } from "./header";
 import { swiperInit } from "./swiper";
 import { dropDown } from "./menu";
 $(document).ready(function () {
+  $(".tabs").each(function () {
+    $(this).tabslet({
+      container: $(this).data("tabs-container"),
+    });
+  });
   setBackgroundElement();
   header.init();
   swiperInit();

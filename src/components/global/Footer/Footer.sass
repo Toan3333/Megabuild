@@ -1,14 +1,14 @@
 .footer
 	&-list
 		display: grid
-		grid-template-columns: 3.8fr 2.6fr 2.5fr 1.2fr
-		gap: 36px
+		grid-template-columns: calc(440 / 1400 * 100%) calc(320 / 1400 * 100%) calc(320 / 1400 * 100%) 1fr
+		gap: rr(60px)
 .footer-col-item > h3
 	@apply text-xl font-medium leading-7 font-oswald text-Second/950
 .footer-col-item > h3.title
-	@apply text-[20px] mb-6
+	@apply text-xl mb-6
 .footer-col-item > p
-	@apply text-[1rem] leading-6 font-normal text-neutral-900
+	@apply text-base leading-6 font-normal text-neutral-900
 .footer-nav > li
 	@apply  rem:leading-[26px] font-semibold text-Second/950
 .footer-nav > li > a
@@ -20,3 +20,6 @@
 .social-icon
 	&:hover
 		@apply bg-Second/950
+.footer-map
+	iframe
+		width: 100%

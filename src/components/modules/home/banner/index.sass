@@ -1,0 +1,50 @@
+.home-banner-item
+	&::before
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.70) 100%)
+		position: absolute
+		left: 0
+		bottom: 0
+		z-index: 1
+		right: 0
+		height: calc(425 / 960 * 100%)
+	&-img
+		+img-ratio(calc(960 / 1920))
+		@media screen and ( max-width: 1024.98px )
+			+img-ratio(calc(2582 / 1200))
+
+.home-banner-slider
+	.swiper-pagination-wrap
+		bottom: rr(56px)
+		left: 0
+		position: absolute
+		width: 100%
+		z-index: 2
+		@media screen and ( max-width: 1024.98px )
+			bottom: rr(32px)
+
+.swiper-pagination
+	&.custom-pagination
+		position: static
+		transform: none
+		display: flex
+		gap: rr(12px)
+		&.is-white
+			.swiper-pagination-bullet
+				background: #fff
+				opacity: 0.5
+				width: rr(20px)
+				height: rr(6px)
+				&-active
+					opacity: 1
+					width: rr(80px)
+		.swiper-pagination-bullet
+			margin: 0
+			width: rr(16px)
+			height: rr(4px)
+			border-radius: rr(10px)
+			transition: all 0.3s ease
+			opacity: 1
+			@apply bg-gray-200
+			&-active
+				width: rr(40px)
+				@apply bg-Second/950

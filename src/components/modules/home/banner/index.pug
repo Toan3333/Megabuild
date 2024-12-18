@@ -1,0 +1,28 @@
+section.home-banner
+    .home-banner-slider.relative
+        .swiper
+            .swiper-wrapper
+                -for (var i = 0; i < 5; i++)
+                    .swiper-slide
+                        .home-banner-item(class="relative")
+                            .home-banner-item-img
+                                img(src=`http://unsplash.it/1920/960?${i}&gravity=center`, alt="")
+                            .home-banner-item-content(class="absolute lg:rem:bottom-[120px] rem:bottom-[60px] left-0 right-0 text-white z-2")
+                                .container
+                                    div(class="flex flex-col lg:flex-row gap-5 justify-between items-start lg:items-end")
+                                        .caption(class="font-oswald lg:w-1/2")
+                                            h2(class="lg:rem:text-[52px] rem:text-[36px] font-medium leading-snug") Megabuild là đơn vị uy tín
+                                            p(class="lg:rem:text-[40px] rem:text-[24px] font-medium mt-3")
+                                                | trong lĩnh vực thi công xây dựng trọn gói
+                                        a.btn.btn-primary(href="/") Tìm Hiểu Thêm
+        .swiper-pagination-wrap 
+            .container
+                .swiper-pagination.custom-pagination.is-white
+        .wrap-button-slide-wrap(class="hidden lg:block absolute w-full top-1/2 -translate-y-1/2 z-2")
+            .container.relative
+                .wrap-button-slide
+                    .btn-prev(class="lg:rem:w-[48px] lg:rem:h-[48px] flex items-center justify-center rounded-full border border-white text-white rem:text-[24px]")
+                        i.far.fa-arrow-left
+                    .btn-next(class="lg:rem:w-[48px] lg:rem:h-[48px] flex items-center justify-center rounded-full border border-white text-white rem:text-[24px]")
+                        i.far.fa-arrow-right
+

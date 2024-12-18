@@ -45,7 +45,7 @@ mixin breadcum(...items)
             ol(class="flex items-center gap-5 pb-3 border-b border-b-neutral-200")
                 each item, index in items
                     li(class=(index !== items.length - 1 ? "pr-5 border-r-4 border-r-Neutral/500 main" : ""))
-                        a(href=item.link ? item.link : "#")(class="rem:text-[16px] text-Primary/Blue font-normal leading-6")
+                        a(href=item.link ? item.link : "#" class="rem:text-[16px] text-Primary/Blue font-normal leading-6")
                             if item.icon
                                 i(class=item.icon)
                             else
@@ -140,10 +140,10 @@ mixin certificateImage(image)
             img(src=image, alt="" class="w-full h-full") 
 mixin formContact()
     .form-contact-box(class="p-10 rounded-xl bg-Neutral/White shadow-DropshadowLight Light")
-        .form-contact-main(class="flex gap-10")
-            .form-left(class="w-[30%]") 
+        .form-contact-main(class="flex flex-col md:flex-row gap-10")
+            .form-left(class="w-full md:w-[30%]") 
                 +title("Form liên hệ tư vấn")
-            .form-contact-info(class="w-[70%]") 
+            .form-contact-info(class="w-full md:w-[70%]") 
                     h2(class="text-lg font-bold text-neutral-900 rem:leading-[26px] mb-2") Quý khách vui lòng điền thông tin vào mẫu bên dưới, đội ngũ Megabuild sẽ phản hồi email của bạn trong thời gian sớm nhất.
                     form(action="")
                         .form-group(class="flex items-center gap-10 mb-5")

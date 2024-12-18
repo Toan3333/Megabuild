@@ -3,6 +3,10 @@ export function dropDown() {
     const dropdownBtn = document.querySelector(".dropdown-button");
     const dropdownNav = document.querySelector(".dropdowm-nav");
 
+    if (!dropdownBtn || !dropdownNav) {
+      return;
+    }
+
     dropdownBtn.addEventListener("click", function (e) {
       e.stopPropagation();
       dropdownNav.classList.toggle("show");
@@ -46,7 +50,9 @@ export function dropDown() {
         overlay.classList.remove("is-show");
       });
     } else {
-      console.error("Không tìm thấy phần tử .header-toggle, .header-menu-mobile hoặc .overlay");
+      console.error(
+        "Không tìm thấy phần tử .header-toggle, .header-menu-mobile hoặc .overlay"
+      );
     }
 
     // Search

@@ -1,0 +1,26 @@
+section.certificate(class="lg:pb-20 pb-10")
+    .container(class="relative") 
+        +titleHeading("Chứng chỉ và giải thưởng")
+        .slide(class="relative overflow-visible")
+            .swiper.swiper-4-certificate
+                .swiper-wrapper
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-1.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-1.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-2.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-3.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-4.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-5.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-3.png")
+                    .swiper-slide 
+                        +certificateImage("./img/certificate-4.png")
+            button.certificate-prev(class="absolute top-1/2 transform -translate-y-1/2  text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer -left-[3.5rem] z-30")
+                i.fa-light.fa-arrow-left-long
+            button.certificate-next(class="absolute top-1/2 transform -translate-y-1/2 text-Primary/Blue rounded-full text-[20px] w-12 h-12 border border-Primary/Blue cursor-pointer z-30 -right-[3.5rem]")
+                i.fa-light.fa-arrow-right-long
