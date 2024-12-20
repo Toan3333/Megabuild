@@ -1,5 +1,6 @@
 import AOS from "aos";
 import lozad from "lozad";
+
 import {
   setBackgroundElement,
   detectCloseElement,

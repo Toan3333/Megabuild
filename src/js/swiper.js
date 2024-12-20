@@ -1,11 +1,5 @@
 import Swiper from "swiper";
-import {
-  Autoplay,
-  Navigation,
-  Thumbs,
-  EffectFade,
-  Pagination,
-} from "swiper/modules";
+import { Autoplay, Navigation, Thumbs, EffectFade, Pagination } from "swiper/modules";
 
 /**
  * @param swiperInit
@@ -49,6 +43,10 @@ function swiperGallery() {
     modules: [Autoplay, Navigation, Thumbs],
     thumbs: {
       swiper: swiperThumb, // Liên kết thumbnail với Swiper chính
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".custom-next", // Điều hướng nút next
@@ -178,6 +176,7 @@ function swiperSlide() {
     spaceBetween: 12,
     slidesPerView: 1.25,
     freeMode: true,
+    initialSlide: 1,
     loop: true,
     centeredSlides: true,
     breakpoints: {
@@ -213,29 +212,39 @@ function homeBannerSlider() {
 }
 
 function homePartnerSlider() {
+  // Slider cho thumbnails (slider nhỏ)
   const homePartnerThumbSlider = new Swiper(".partner-thumb-slider .swiper", {
     modules: [Autoplay, Navigation, Pagination],
     slidesPerView: 3.5,
     spaceBetween: 20,
-    rewind: true,
-    slideToClickedSlide: true,
+    loop: true,
+    speed: 5000,
+    centeredSlides: true,
+    allowTouchMove: false,
+    disableOnInteraction: false,
+    autoplay: {
+      delay: 1,
+      waitForTransition: true,
+    },
     breakpoints: {
       768: {
         slidesPerView: 5.5,
       },
       1024: {
         slidesPerView: 9,
+        loop: true,
       },
     },
   });
+
   const homePartnerSlider = new Swiper(".partner-slider .swiper", {
-    modules: [Autoplay, Navigation, Pagination, Thumbs],
-    slidesPerView: "1",
+    modules: [Autoplay, Navigation, Pagination],
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
     autoplay: {
-      delay: 3500,
       disableOnInteraction: false,
+      waitForTransition: true,
     },
     pagination: {
       el: ".partner-slider .swiper-pagination",
@@ -244,9 +253,6 @@ function homePartnerSlider() {
     navigation: {
       nextEl: ".partner-slider .wrap-button-slide .btn-next",
       prevEl: ".partner-slider .wrap-button-slide .btn-prev",
-    },
-    thumbs: {
-      swiper: homePartnerThumbSlider,
     },
   });
 }

@@ -1,0 +1,11 @@
+.btn-lined
+	@apply flex items-center gap-3 h-12 rounded-full  font-semibold uppercase
+	.icon
+		@apply rounded-full text-Second/950 flex items-center overflow-hidden rem:w-[30px] rem:h-[30px]
+		> *
+			@apply rem:min-w-[30px] flex-center transition-all duration-500 ease-in-out -translate-x-full  h-full w-full
+	&:hover
+		// @apply ring-2 
+		.icon
+			> *
+				@apply translate-x-0
