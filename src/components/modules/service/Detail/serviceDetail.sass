@@ -1,9 +1,19 @@
 .certificateImage
-	@apply rem:w-[230px]
+	a
+		display: block
+		+img-ratio(calc(282 / 224), $fit: contain)
+
 .certificate-prev
+	@apply max-lg:hidden
 	&:hover
 		@apply bg-Primary/Red text-Neutral/White border-transparent transition-all ease-linear
 .certificate-next
+	@apply max-lg:hidden
 	&:hover
 		@apply bg-Primary/Red text-Neutral/White border-transparent transition-all ease-linear
 
+.form-left
+	@apply max-md:w-full #{!important}
+
+.form-contact-info
+	@apply max-md:w-full #{!important}

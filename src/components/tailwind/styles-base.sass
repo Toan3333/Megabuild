@@ -3,6 +3,7 @@
 		scroll-padding-top: 100px
 	html, body
 		font-size: 15px
+
 		@screen md
 			font-size: 15px
 		@screen xl
@@ -40,7 +41,7 @@
 		&>div
 			@apply absolute top-0 left-0 w-full h-full transition-all duration-300
 	body
-		@apply text-[#333333] text-base font-inter-tight
+		@apply text-Neutral/950 text-base font-inter-tight
 	.row
 		@apply flex flex-wrap -mx-[7.5px] lg:-mx-5
 	.col
@@ -58,8 +59,9 @@
 		@apply text-lg font-bold
 
 	img
-		@apply inline max-w-none
-
+		@apply block max-w-full
+	iframe
+		@apply inline-block max-w-full
 	a
 		@apply transition-all ease-linear duration-200
 
@@ -97,3 +99,5 @@
 			@apply absolute top-0 left-0 w-full h-full -z-1 pointer-events-none
 	.mb-base
 		@apply lg:mb-10 mb-8
+	.prose
+		color: #3D3D3D !important

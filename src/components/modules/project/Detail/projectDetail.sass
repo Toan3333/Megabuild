@@ -1,23 +1,35 @@
 .swiper-thumb .swiper-slide-thumb-active img
 	@apply border-2 border-Primary/Red rounded-lg
+
+.swiper-detail
+	figure
+		+img-ratio(calc(785 / 1400))
+
+.swiper-thumb
+	figure
+		+img-ratio(calc(118 / 177))
+
 .custom-prev, .project-btn-prev
 	&:hover
 		@apply bg-Primary/Red text-Neutral/White border-transparent transition-all ease-linear
 .custom-next, .project-btn-next
 	&:hover
 		@apply bg-Primary/Red text-Neutral/White border-transparent transition-all ease-linear
-.project-flex > p  
+.project-flex > p
 	@apply text-lg font-normal rem:leading-[26px] text-neutral-900
 .project-box-item
 	@apply flex gap-2 flex-col
-.project-box-item > span 
+.project-box-item > span
 	@apply text-[1rem] leading-6 font-normal
 .project-box-item > h2
 	@apply text-[1rem] font-bold leading-6
 .form-field
-	@apply flex items-center justify-between w-full pb-2 border-b border-b-[#E7E7E7]
+	br
+		display: none
+	p
+		@apply flex items-center justify-between w-full pb-2 border-b border-b-[#E7E7E7]
 	i
 		@apply text-Primary/Blue
 
-.form-field > input 
+.form-field > input
 	@apply text-sm font-light leading-[18px]
