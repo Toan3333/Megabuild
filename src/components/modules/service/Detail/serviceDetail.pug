@@ -8,10 +8,10 @@ section.service-detail(class="mt-3 relative")
     .service-icon(class="absolute top-0") 
         img(src="./img/logo-service.png", alt="" class="w-full bg-cover rem:h-[600px]")
     .container 
-        .service-heading(class="p-10 rounded-b-xl bg-Second/950 text-Neutral/White flex items-center justify-between rem:gap-[280px] mb-10")
-            .col-left(class="w-[30%]") 
+        .service-heading(class="p-10 rounded-b-xl bg-Second/950 text-Neutral/White flex flex-col md:flex-row items-center justify-between md:rem:gap-[280px] gap-5 mb-10")
+            .col-left(class="md:w-[30%] w-full") 
                 +title("Tổng thầu xây dựng", "text-white")
-            .col-right(class="w-[70%]") 
+            .col-right(class="md:w-[70%] w-full") 
                 p(class="text-lg font-normal rem:leading-[26px]") Với nguồn lực sẵn có của công ty, chúng tôi quản lý và phối hợp các nhà thầu phụ cũng như nhà cung cấp một cách chuyên nghiệp, để đạt được mục tiêu cuối cùng của dự án.
         .service-detail-2(class="pb-10")
             h3(class="text-32 font-medium leading-10 text-Primary/Blue text-center font-oswald mb-10") Chức năng của tổng thầu xây dựng
@@ -51,7 +51,7 @@ section.form-contact(class="py-20")
         +formContact()
 section.service-similar  
     +titleHeading("Dịch vụ khác")
-    .service-similar-list(class="grid grid-cols-3 rem:gap-[2px]") 
+    .service-similar-list(class="grid md:grid-cols-3 grid-cols-2 rem:gap-[2px]") 
         +serviceSimilarItem("./img/service-similar-1.png", "Tổng thầu xây dựng")
         +serviceSimilarItem("./img/service-similar-2.png", "Tư vấn thiết kế")
         +serviceSimilarItem("./img/service-similar-3.png", "Rà soát thiết kế")

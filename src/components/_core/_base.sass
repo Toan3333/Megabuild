@@ -1,12 +1,27 @@
 .btn
-	@apply inline-flex items-center justify-center rounded-lg px-8 py-3 text-base font-medium transition-all duration-300
+	@apply inline-flex items-center justify-center rounded-lg px-8 py-3 text-base font-medium transition-all duration-300 gap-3
 	&-primary
 		@apply bg-Primary/Red text-Neutral/White
+	&-border-primary
+		@apply border border-Primary/Red text-Primary/Red
 	&:hover
-		background-color: #B60008
+		background-color: #b60008
+		color: #fff
+
+[type="submit"]
+	@apply transition-all duration-300 ease-in-out rem:min-w-[196px]
+	&.btn-primary
+		@apply bg-Primary/Red text-Neutral/White
+
+[type="submit"]:hover
+			background-color: #b60008
+			color: #fff
 
 .facetwp-load-more
 	@extend .btn
 	@extend .btn-primary
 	&.facetwp-hidden
 		@apply hidden
+
+.fancybox__content :focus:not(.carousel__button.is-close)
+	@apply outline-none

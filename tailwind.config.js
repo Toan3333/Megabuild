@@ -76,10 +76,26 @@ module.exports = {
     },
     fontSize: {
       0: ["0", { lineHeight: "0" }],
-      xs: ["clamp(10px,calc(12/1920*100rem),calc(12/1920*100rem))", , { lineHeight: "1.2" }],
-      sm: ["clamp(14px,calc(14/1920*100rem),calc(14/1920*100rem))", , { lineHeight: "1.2" }],
-      base: ["clamp(14px,calc(16/1920*100rem),calc(16/1920*100rem))", , { lineHeight: "1.2" }],
-      "15px": ["clamp(15px,calc(15/1920*100rem),calc(15/1920*100rem))", , { lineHeight: "1.2" }],
+      xs: [
+        "clamp(10px,calc(12/1920*100rem),calc(12/1920*100rem))",
+        ,
+        { lineHeight: "1.2" },
+      ],
+      sm: [
+        "clamp(14px,calc(14/1920*100rem),calc(14/1920*100rem))",
+        ,
+        { lineHeight: "1.2" },
+      ],
+      base: [
+        "clamp(14px,calc(16/1920*100rem),calc(16/1920*100rem))",
+        ,
+        { lineHeight: "1.2" },
+      ],
+      "15px": [
+        "clamp(15px,calc(15/1920*100rem),calc(15/1920*100rem))",
+        ,
+        { lineHeight: "1.2" },
+      ],
       lg: ["calc(18/1920*100rem)", , { lineHeight: "1.2" }],
       xl: ["calc(20/1920*100rem)", , { lineHeight: "1.2" }],
       "2xl": ["clamp(18px,calc(24/1920*100rem),calc(24/1920*100rem))"],
@@ -221,7 +237,7 @@ module.exports = {
         "Neutral/200": "#dcdcdc",
         "Neutral/300": "#bdbdbd",
         "Neutral/400": "#989898",
-        "Neutral/500 main": "#818181",
+        "Neutral/500": "#818181",
         "Neutral/600": "#656565",
         "Neutral/700": "#525252",
         "Neutral/800": "#464646",
@@ -342,7 +358,14 @@ module.exports = {
     lineClamp: ["responsive", "hover"],
   },
   plugins: [
-    plugin(function ({ addBase, addComponents, addVariant, matchUtilities, addUtilities, theme }) {
+    plugin(function ({
+      addBase,
+      addComponents,
+      addVariant,
+      matchUtilities,
+      addUtilities,
+      theme,
+    }) {
       addBase({});
       addComponents({
         ".transition-300": {

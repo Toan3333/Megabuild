@@ -2,15 +2,15 @@
 	@apply flex items-center pb-5 border-b
 
 .recruitment-location
-	@apply w-2/4 text-[1rem] text-Second/950 font-bold leading-6
+	@apply w-2/4 text-base text-Second/950 font-bold leading-6
 .recruitment-location-position
-	@apply w-2/4 text-[1rem] text-neutral-900 font-normal leading-6
+	@apply w-2/4 text-base text-neutral-900 font-normal leading-6
 .content-item
 	@apply flex gap-2
 	i
 		@apply text-[6px] font-black text-neutral-200 mt-3
 	p
-		@apply text-[1rem] font-normal leading-6 text-neutral-900
+		@apply text-base font-normal leading-6 text-neutral-900
 .button-dowload
 	@apply border border-Primary/Red bg-transparent text-Primary/Red w-full flex items-center justify-center transition-all ease-linear
 	&:hover
@@ -21,8 +21,10 @@
 	@apply p-6 flex flex-col gap-3
 	h3
 		@apply text-xl text-Second/950 font-bold leading-7
+	& + .box-info-item
+		@apply border-t border-t-Neutral/100
 .box-info-date
-	@apply flex items-center gap-[10px] text-[1rem]
+	@apply flex items-center gap-[10px] text-base
 	i
 		@apply text-Primary/Blue font-normal
 .box-info-date > span.title
@@ -33,6 +35,9 @@
 	@apply text-Primary/Red font-bold leading-6
 @media screen and (max-width: 1023.98px)
 	.recruitment-location
-		@apply w-[unset] gap-2 
-	.recruitment-detail-tab-item 
+		@apply w-[unset] gap-2
+	.recruitment-detail-tab-item
 		@apply gap-[10px]
+
+.form-group-textarea
+	@apply sm:col-span-2

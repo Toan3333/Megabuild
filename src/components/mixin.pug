@@ -84,7 +84,7 @@ mixin newsLeft(image, date, name, title, desc)
                 img(src=image, alt="" class="w-full h-full rounded-lg")  
         .news-date(class="rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3") 
             span= date
-            .dot(class="w-1 h-1 rounded-full bg-neutral-500 z-10")
+            .dot(class="w-1 h-1 rounded-full bg-Neutral/500 z-10")
             span= name
         h3(class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out")= title
         p(class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2")= desc
@@ -92,10 +92,10 @@ mixin newsRight(image, date, name, title, desc)
     .news-cols
         .news-col-item(class="flex items-center")
             .news-col-flex(class="flex items-center gap-5")  
-                .news-col-image(class="w-[40%] max-lg:w-full max-md:mb-4") 
-                    a(href="./newsDetail.html" class="")
-                        img(src=image, alt="" class="w-full rem:h-[200px] rounded-lg object-cover max-md:rem:h-[240px]")
-                .news-col-content(class="w-[60%] max-lg:w-full") 
+                .news-col-image(class="w-[37%] max-lg:w-full max-md:mb-4") 
+                    a(href="./newsDetail.html" class="ratio:pt-[160_240] relative block")
+                        img(src=image, alt="" class="w-full h-full rounded-lg object-cover absolute top-0 left-0")
+                .news-col-content(class="w-[63%] max-lg:w-full") 
                     .news-date(class="text-[12px] text-Neutral/500 main font-normal rem:leading-[18px] flex items-center gap-3 mb-3") 
                         span= date
                         .dot(class="w-1 h-1 rounded-full bg-neutral-500 z-10")
@@ -107,16 +107,16 @@ mixin newsHeading(newsLink1, newsLink2, newsLink3, newsLink4,)
         +title("Tin tức - Sự kiện")
         .project-items(class="flex items-center justify-between gap-4")
             if newsLink1
-                .link(class="pr-4 border-r border-r-neutral-200")  
+                .link(class="pr-4 border-r text-Neutral/500 border-r-neutral-200")  
                     a(href="#" class="active")=  newsLink1
             if newsLink2
-                .link(class="pr-4 border-r border-r-neutral-200")  
+                .link(class="pr-4 border-r text-Neutral/500 border-r-neutral-200")  
                     a(href="#" )=  newsLink2 
             if newsLink3
-                .link(class="pr-4 border-r border-r-neutral-200")  
+                .link(class="pr-4 border-r text-Neutral/500 border-r-neutral-200")  
                     a(href="#" )=  newsLink3
             if newsLink4
-                .link(class="pr-4 border-r border-r-neutral-200")  
+                .link(class="pr-4 border-r text-Neutral/500 border-r-neutral-200")  
                     a(href="#")=  newsLink4
 mixin news()
     .container 
@@ -133,7 +133,7 @@ mixin serviceItem(image, title)
         .service-image(class="mb-5 rounded-xl overflow-hidden") 
             a(href="#" class="ratio:pt-[398_680] rounded-xl")
                 img(src=image, alt="" class="w-full h-full rounded-xl hover:scale-110 transition-all ease-linear duration-500") 
-        p(class="text-lg font-normal rem: text-neutral-900 leading-[26px]")= title
+        p(class="text-lg font-normal rem: text-Neutral/900 leading-[26px]")= title
 mixin certificateImage(image)
     .certificateImage
         a(href="#")
@@ -169,7 +169,7 @@ mixin serviceSimilarItem(image, title)
         .service-similar-image(class="relative group overflow-hidden cursor-pointer") 
             a(href="#" class="ratio:pt-[762_639] group-hover:scale-105 overflow-hidden")
                 img(src=image, alt="" class="w-full h-full group-hover:scale-110 transition-all ease-linear duration-300 cursor-pointer") 
-            .bg(class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/50 to-black/80 z-30 group-hover:opacity-0 transition-all ease-linear duration-200")
+            .bg(class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/50 to-black/80 z-30 transition-all ease-linear duration-200 group-hover:from-black/10 group-hover:to-black/40")
             .service-similar-icon(class="absolute inset-0 flex items-center justify-center flex-col text-white text-[80px] opacity-0 invisible transition-all duration-500 group-hover:opacity-100 group-hover:visible z-30") 
                 a(href="#")
                     i.fa-light.fa-circle-plus

@@ -21,6 +21,7 @@ $(document).ready(function () {
   header.init();
   swiperInit();
   dropDown();
+  buttonToTop();
 });
 
 /*==================== Aos Init ====================*/
