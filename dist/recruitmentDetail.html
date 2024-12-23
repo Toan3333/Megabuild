@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet">
+		<title></title>
+	</head>
+	<body>
+		<header class="header sticky top-0 w-full py-2 shadow-Background Blur bg-linear-1 z-50">
+			<form class="search-bar-container" action="">
+				<div class="searchbox w-full relative cursor-pointer"> 
+					<input class="searchinput px-4 py-2 rounded bg-Neutral/White shadow-lg w-full cursor-pointer" id="search-btn" type="text" placeholder="Tìm kiếm...">
+					<div class="search-icon absolute top-2/4 -translate-y-2/4 right-0 pr-5 text-Primary/Blue"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></div>
+				</div>
+			</form>
+			<div class="container"> 
+				<div class="header-main flex items-center justify-between">
+					<div class="header-left flex items-center gap-15 max-md:gap-[3.2rem]">
+						<div class="header-toggle text-32 hidden max-lg:block max-md:text-3xl"> <i class="fa-light fa-bars"></i></div>
+						<div class="header-logo max-md:ml-[4rem] max-lg:ml-[242px]"> <a href="#"><img src="./img/Logo.png" alt=""></a></div>
+						<div class="header-nav max-lg:hidden"> 
+							<ul class="header-menu flex items-center justify-between rem:gap-[26px]"> 
+								<li> <a href="./about.html">Giới thiệu</a></li>
+								<li> <a href="./serviceList.html">Dịch vụ</a></li>
+								<li class="flex items-center relative dropdown-button"> <a class="dropdown-btn" href="#">Dự án<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+									<div class="dropdowm-nav absolute top-0 rem:w-[300px] bg-Primary/Blue p-6 rounded mt-9"> 
+										<ul class="dropdowm-menu flex flex-col gap-4"> 
+											<li> <a href="#">Dự án Dân dụng </a></li>
+											<li> <a href="./projectList.html">Dự án công nghiệp</a></li>
+											<li> <a href="#">Dự án hạ tầng kỹ thuật</a></li>
+										</ul>
+									</div>
+								</li>
+								<li> <a href="./newsList.html">Tin tức - Sự kiện</a></li>
+								<li> <a href="./recruitmentList.html">Tuyển dụng  </a></li>
+								<li> <a href="./contact.html">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-right flex items-center"> 
+						<div class="header-language flex items-center gap-3"> <a href="#"><img src="./img/Vn.png" alt=""></a>
+							<div class="header-language-dropdown flex items-center gap-1"> <span class="text-lg uppercase font-medium text-Second/950 rem:leading-[26px]">VN </span><i class="fa-sharp fa-solid fa-caret-down"></i></div>
+						</div>
+						<div class="header-search ml-6 text-Second/950 rem:text-[24px] font-normal cursor-pointer"> <i class="fa-sharp fa-regular fa-magnifying-glass"></i></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="overlay"></div>
+		<section class="header-menu-mobile pt-5 px-4 hidden max-md:block"> 
+			<ul> 
+				<li> <a href="#">Giới thiệu</a></li>
+				<li> <a href="#">Dịch vụ</a></li>
+				<li class="flex items-center relative dropdown-button"> <a class="dropdown-btn" href="#">Dự án<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+					<div class="dropdowm-nav absolute top-0 rem:w-[300px] bg-Primary/Blue p-6 rounded mt-9">
+						<ul class="dropdowm-menu flex flex-col gap-4"> 
+							<li> <a href="#">Dự án Dân dụng </a></li>
+							<li> <a href="./projectList.html">Dự án công nghiệp</a></li>
+							<li> <a href="#">Dự án hạ tầng kỹ thuật</a></li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="#">Tin tức - Sự kiện </a></li>
+				<li> <a href="#">Tuyển dụng</a></li>
+				<li> <a href="#">Liên hệ </a></li>
+			</ul>
+		</section>
+		<div class="backdrop backdrop-search"></div>
+		<div data-scroll-container>
+			<main>
+				<div class="breadcum mt-32">
+					<div class="breadcum py-3">
+						<div class="container">
+							<ol class="flex items-center gap-5 pb-3 border-b border-b-neutral-200">
+								<li class="pr-5 border-r-4 border-r-Neutral/500 main"><a class="rem:text-[16px] text-Primary/Blue font-normal leading-6" href="#"><i class="fa-thin fa-building"></i></a></li>
+								<li><a class="rem:text-[16px] text-Primary/Blue font-normal leading-6" href="/">Tuyển dụng</a></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<section class="recruitment-detail-1 py-20"> 
+					<div class="container"> 
+						<div class="recruitment-detail-main flex gap-10 max-lg:flex-col"> 
+							<div class="recruitment-detail-left w-[70%] max-lg:w-full">
+								<h1 class="text-32 leading-10 font-bold text-Second/950 pb-3 border-b border-b-neutral-200">Nhân viên Marketing</h1>
+								<div class="recruitment-detail-tabs flex gap-10 p-8 max-md:flex-col max-md:p-4"> 
+									<div class="recruitment-detail-tab-left w-2/4 flex flex-col gap-5 max-lg:w-full">
+										<div class="recruitment-detail-tab-item">
+											<div class="recruitment-location">Vị trí </div>
+											<div class="recruitment-location-position">Trợ lý Marketing</div>
+										</div>
+										<div class="recruitment-detail-tab-item">
+											<div class="recruitment-location">Chức vụ </div>
+											<div class="recruitment-location-position">Nhân viên</div>
+										</div>
+										<div class="recruitment-detail-tab-item">
+											<div class="recruitment-location">Yêu cầu bằng cấp</div>
+											<div class="recruitment-location-position">Cao đẳng chuyên ngành</div>
+										</div>
+										<div class="recruitment-detail-tab-item border-none">
+											<div class="recruitment-location">Mức lương</div>
+											<div class="recruitment-location-position">Thương lượng</div>
+										</div>
+									</div>
+									<div class="recruitment-detail-tab-right w-2/4 flex flex-col gap-5 max-lg:w-full">
+										<div class="recruitment-detail-tab-item">
+											<div class="recruitment-location">Số lượng ứng tuyển</div>
+											<div class="recruitment-location-position">02</div>
+										</div>
+										<div class="recruitment-detail-tab-item">
+											<div class="recruitment-location">Địa điểm làm việc</div>
+											<div class="recruitment-location-position">TP. Hồ Chí Minh</div>
+										</div>
+										<div class="recruitment-detail-tab-item">
+											<div class="recruitment-location">Giới tính</div>
+											<div class="recruitment-location-position">Không yêu cầu</div>
+										</div>
+										<div class="recruitment-detail-tab-item border-none">
+											<div class="recruitment-location">Hạn nộp hồ sơ</div>
+											<div class="recruitment-location-limit">20.06.2024</div>
+										</div>
+									</div>
+								</div>
+								<div class="content mt-8 p-8 bg-Neutral/50"> 
+									<h3 class="rem:text-[24px] font-bold leading-8 text-Second/950 font-oswald pb-3 border-b border-b-neutral-200">Mô tả công việc</h3>
+									<div class="content-list mt-5 flex flex-col gap-3"> 
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+									</div>
+								</div>
+								<div class="content p-8"> 
+									<h3 class="rem:text-[24px] font-bold leading-8 text-Second/950 font-oswald pb-3 border-b border-b-neutral-200">Yêu cầu công việc</h3>
+									<div class="content-list mt-5 flex flex-col gap-3"> 
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+									</div>
+								</div>
+								<div class="content p-8"> 
+									<h3 class="rem:text-[24px] font-bold leading-8 text-Second/950 font-oswald pb-3 border-b border-b-neutral-200">Chế độ phúc lợi</h3>
+									<div class="content-list mt-5 flex flex-col gap-3"> 
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+										<div class="content-item"><i class="fa-duotone fa-solid fa-circle"></i>
+											<p>Xây dựng kế hoạch, triển khai các hoạt động PR truyền thông phù hợp với chiến lược Marketing tổng thể của sản phẩm hoặc dự án</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="recruitment-detail-right w-[30%] max-lg:w-full"> 
+								<div class="button flex flex-col gap-3 p-6"> <a class="py-3 px-8 text-[1rem] font-medium leading-6 text-white bg-Primary/Red rounded-lg flex items-center gap-2 " href="button-apply">Ứng tuyển ngay<i class="fa-regular fa-angle-down"></i></a><a class="py-3 px-8 text-[1rem] font-medium leading-6 text-white bg-Primary/Red rounded-lg flex items-center gap-2 fa-light fa-file-arrow-down" href="button-dowload">Tải hồ sơ ứng tuyển<i class="fa-regular fa-angle-down"></i></a>
+								</div>
+								<div class="box-info mt-10 max-lg:border max-lg:border-neutral-300"> 
+									<h2 class="box-info-heading px-6 py-5 bg-Primary/Blue text-Neutral/White leading-8 font-bold font-manrope">Vị trí tuyển dụng khác</h2>
+									<div class="box-info-item border-t border-Neutral/100">
+										<h3>Nhân viên Marketing</h3>
+										<div class="box-info-date"> <i class="fa-regular fa-calendar-star"></i><span class="title">Hạn nộp hồ sơ</span><span class="date">20.06.2024</span></div>
+									</div>
+									<div class="box-info-item"> 
+										<h3>Nhân viên Marketing</h3>
+										<div class="box-info-date"> <i class="fa-regular fa-calendar-star"></i><span class="title">Hạn nộp hồ sơ</span><span class="date">20.06.2024</span></div>
+									</div>
+									<div class="box-info-item"> 
+										<h3>Nhân viên Marketing</h3>
+										<div class="box-info-date"> <i class="fa-regular fa-calendar-star"></i><span class="title">Hạn nộp hồ sơ</span><span class="date">20.06.2024</span></div>
+									</div>
+									<div class="box-info-item"> 
+										<h3>Nhân viên Marketing</h3>
+										<div class="box-info-date"> <i class="fa-regular fa-calendar-star"></i><span class="title">Hạn nộp hồ sơ</span><span class="date">20.06.2024</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer class="footer py-10 bg-neutral-50">
+					<div class="social-fixed fixed bottom-0 right-0 z-50 max-md:bottom-10">
+						<div class="social-fixed-main flex flex-col gap-3 py-15"> 
+							<div class="social-icon active active w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/2 text-Neutral/White inline-flex items-center justify-center text-2xl relative group p-6"><i class="fa-regular fa-arrow-up-to-line">                </i></div>
+							<div class="social-icon w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer"><i class="fa-sharp fa-solid fa-pen-to-square"></i></div>
+							<div class="social-icon w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer"><i class="fa-solid fa-phone"></i></div>
+							<div class="social-icon w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer"><i class="fa-solid fa-envelope"></i></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="footer-logo mb-6"> <a href="#"><img src="./img/Logo-footer.png" alt=""></a></div>
+						<div class="footer-list max-md:grid-cols-1 max-lg:grid-cols-2"> 
+							<div class="footer-col flex flex-col gap-6"> 
+								<h1 class="font-oswald text-5xl rem:leading-[48px] text-Second/950 font-medium max-md:text-3xl">Luôn sẵn sàng hỗ trợ và đồng hành cùng bạn</h1>
+								<p class="text-[1rem] font-normal leading-6 text-neutral-900">Đăng ký nhận bản tin để cập nhật những thông tin, sự kiện mới nhất từ chúng tôi.</p>
+								<form action="">
+									<div class="form-email w-full flex items-center text-[1rem] leading-6 text-Neutral/500 main pb-2 border-b border-b-Neutral/500 main"> 
+										<input class="w-full bg-transparent" type="text" placeholder="Email"><i class="fa-solid fa-paper-plane-top"></i>
+									</div>
+								</form>
+								<div class="copy-right"> 
+									<p class="rem:text-[14px] font-normal rem:leading-[18px] text-neutral-950">© 2024 Megabuild. All Rights Reserved. Thiết kế web bởi Cánh Cam</p>
+								</div>
+							</div>
+							<div class="footer-col flex flex-col gap-10">
+								<div class="footer-col-item flex flex-col gap-2"> 
+									<h3>Văn phòng Megabuild</h3>
+									<p class="text-justify">52 – 54 Đường số 18, P. An Phú, TP. Thủ Đức, TP.HCM</p>
+								</div>
+								<div class="footer-map"> <img src="./img/map.png" alt=""></div>
+							</div>
+							<div class="footer-col">
+								<div class="footer-col-item"> 
+									<h3 class="title">Bạn cần tư vấn ?                    </h3>
+								</div>
+								<div class="footer-col-item flex items-center gap-3 pb-6 border-b border-b-slate-900"> <i class="fa-sharp fa-solid fa-phone-volume"></i><span class="text-32 text-Primary/Red leading-10 font-bold font-oswald">+84 28 2253 7288</span></div>
+								<div class="footer-col-item flex items-center gap-3 mt-6"> <i class="fa-sharp fa-solid fa-envelope"></i><span class="text-[1rem] text-Second/950 font-medium leading-6">info@megabuild.com</span></div>
+							</div>
+							<div class="footer-col"> 
+								<ul class="footer-nav flex flex-col gap-6"> 
+									<li> <a href="#">Giới thiệu</a></li>
+									<li> <a href="#">Dịch vụ</a></li>
+									<li> <a href="#">Dự án</a></li>
+									<li> <a href="#">Tin tức - Sự kiện</a></li>
+									<li> <a href="#">Tuyển dụng</a></li>
+									<li> <a href="#">Liên hệ  </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+		<script src="./js/core.min.js"></script>
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>

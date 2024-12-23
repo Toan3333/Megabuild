@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet">
+		<title></title>
+	</head>
+	<body>
+		<header class="header sticky top-0 w-full py-2 shadow-Background Blur bg-linear-1 z-50">
+			<form class="search-bar-container" action="">
+				<div class="searchbox w-full relative cursor-pointer"> 
+					<input class="searchinput px-4 py-2 rounded bg-Neutral/White shadow-lg w-full cursor-pointer" id="search-btn" type="text" placeholder="Tìm kiếm...">
+					<div class="search-icon absolute top-2/4 -translate-y-2/4 right-0 pr-5 text-Primary/Blue"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></div>
+				</div>
+			</form>
+			<div class="container"> 
+				<div class="header-main flex items-center justify-between">
+					<div class="header-left flex items-center gap-15 max-md:gap-[3.2rem]">
+						<div class="header-toggle text-32 hidden max-lg:block max-md:text-3xl"> <i class="fa-light fa-bars"></i></div>
+						<div class="header-logo max-md:ml-[4rem] max-lg:ml-[242px]"> <a href="#"><img src="./img/Logo.png" alt=""></a></div>
+						<div class="header-nav max-lg:hidden"> 
+							<ul class="header-menu flex items-center justify-between rem:gap-[26px]"> 
+								<li> <a href="./about.html">Giới thiệu</a></li>
+								<li> <a href="./serviceList.html">Dịch vụ</a></li>
+								<li class="flex items-center relative dropdown-button"> <a class="dropdown-btn" href="#">Dự án<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+									<div class="dropdowm-nav absolute top-0 rem:w-[300px] bg-Primary/Blue p-6 rounded mt-9"> 
+										<ul class="dropdowm-menu flex flex-col gap-4"> 
+											<li> <a href="#">Dự án Dân dụng </a></li>
+											<li> <a href="./projectList.html">Dự án công nghiệp</a></li>
+											<li> <a href="#">Dự án hạ tầng kỹ thuật</a></li>
+										</ul>
+									</div>
+								</li>
+								<li> <a href="./newsList.html">Tin tức - Sự kiện</a></li>
+								<li> <a href="./recruitmentList.html">Tuyển dụng  </a></li>
+								<li> <a href="./contact.html">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-right flex items-center"> 
+						<div class="header-language flex items-center gap-3"> <a href="#"><img src="./img/Vn.png" alt=""></a>
+							<div class="header-language-dropdown flex items-center gap-1"> <span class="text-lg uppercase font-medium text-Second/950 rem:leading-[26px]">VN </span><i class="fa-sharp fa-solid fa-caret-down"></i></div>
+						</div>
+						<div class="header-search ml-6 text-Second/950 rem:text-[24px] font-normal cursor-pointer"> <i class="fa-sharp fa-regular fa-magnifying-glass"></i></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="overlay"></div>
+		<section class="header-menu-mobile pt-5 px-4 hidden max-md:block"> 
+			<ul> 
+				<li> <a href="#">Giới thiệu</a></li>
+				<li> <a href="#">Dịch vụ</a></li>
+				<li class="flex items-center relative dropdown-button"> <a class="dropdown-btn" href="#">Dự án<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+					<div class="dropdowm-nav absolute top-0 rem:w-[300px] bg-Primary/Blue p-6 rounded mt-9">
+						<ul class="dropdowm-menu flex flex-col gap-4"> 
+							<li> <a href="#">Dự án Dân dụng </a></li>
+							<li> <a href="./projectList.html">Dự án công nghiệp</a></li>
+							<li> <a href="#">Dự án hạ tầng kỹ thuật</a></li>
+						</ul>
+					</div>
+				</li>
+				<li> <a href="#">Tin tức - Sự kiện </a></li>
+				<li> <a href="#">Tuyển dụng</a></li>
+				<li> <a href="#">Liên hệ </a></li>
+			</ul>
+		</section>
+		<div class="backdrop backdrop-search"></div>
+		<div data-scroll-container>
+			<main>
+				<div class="banner-image"> <a class="ratio:pt-[650_1920] w-full h-full" href="#"><img class="w-full h-full" src="./img/banner-news.png" alt=""/></a></div>
+				<div class="breadcum py-3">
+					<div class="container">
+						<ol class="flex items-center gap-5 pb-3 border-b border-b-neutral-200">
+							<li class="pr-5 border-r-4 border-r-Neutral/500 main"><a class="rem:text-[16px] text-Primary/Blue font-normal leading-6" href="#"><i class="fa-thin fa-building"></i></a></li>
+							<li><a class="rem:text-[16px] text-Primary/Blue font-normal leading-6" href="/">Tin tức - Sự kiện</a></li>
+						</ol>
+					</div>
+				</div>
+				<section class="news-list py-20 max-lg:py-10">
+					<div class="container"> 
+						<div class="container"> 
+							<div class="news-heading flex items-center justify-between max-md:flex-col max-md:gap-5">
+								<h3 class="text-5xl font-medium rem:leading-[48px] text-Second/950 font-oswald max-md:text-3xl ">Tin tức - Sự kiện</h3>
+								<div class="project-items flex items-center justify-between gap-4">
+									<div class="link pr-4 border-r text-Neutral/500 border-r-neutral-200"> <a class="active" href="#">Tất cả</a></div>
+									<div class="link pr-4 border-r text-Neutral/500 border-r-neutral-200"> <a href="#">Tin Megabuild</a></div>
+									<div class="link pr-4 border-r text-Neutral/500 border-r-neutral-200"> <a href="#">Tin dự án</a></div>
+								</div>
+							</div>
+							<div class="news-wrapper mt-10 flex gap-10 justify-between max-lg:flex-col"> 
+								<div class="news-left w-2/4 max-md:hidden max-lg:w-full">
+									<div class="news-left-item"> 
+										<div class="news-left-image overflow-hidden rounded-lg mb-4"> <a class="img-ratio ratio:pt-[408_680] hover:scale-105 rounded-lg" href="./newsDetail.html"><img class="w-full h-full rounded-lg" src="./img/news.png" alt=""/></a></div>
+										<div class="news-date rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3"> <span>01/10/2024</span>
+											<div class="dot w-1 h-1 rounded-full bg-Neutral/500 z-10"></div><span>Tin dự án</span>
+										</div>
+										<h3 class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+										<p class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+									</div>
+								</div>
+								<div class="news-right w-2/4 flex flex-col gap-10 max-lg:w-full max-lg:grid max-md:grid-cols-1 max-lg:grid-cols-2">
+									<div class="news-cols">
+										<div class="news-col-item flex items-center">
+											<div class="news-col-flex flex items-center gap-5"> 
+												<div class="news-col-image w-[37%] max-lg:w-full max-md:mb-4"> <a class="ratio:pt-[160_240] relative block" href="./newsDetail.html"><img class="w-full h-full rounded-lg object-cover absolute top-0 left-0" src="./img/news.png" alt=""/></a></div>
+												<div class="news-col-content w-[63%] max-lg:w-full"> 
+													<div class="news-date text-[12px] text-Neutral/500 main font-normal rem:leading-[18px] flex items-center gap-3 mb-3"> <span>01/10/2024</span>
+														<div class="dot w-1 h-1 rounded-full bg-neutral-500 z-10"></div><span>Tin dự án</span>
+													</div>
+													<h3 class="text-Second/950 text-lg font-semibold rem:leading-[26px] pb-2 border-b border-b-neutral-50 mb-3 hover:text-Primary/Red cursor-pointer transition-all ease-in-out max-md:mb-2">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+													<p class="rem:text-[14px] text-neutral-500 font-normal leading-[18px] overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="news-cols">
+										<div class="news-col-item flex items-center">
+											<div class="news-col-flex flex items-center gap-5"> 
+												<div class="news-col-image w-[37%] max-lg:w-full max-md:mb-4"> <a class="ratio:pt-[160_240] relative block" href="./newsDetail.html"><img class="w-full h-full rounded-lg object-cover absolute top-0 left-0" src="./img/news.png" alt=""/></a></div>
+												<div class="news-col-content w-[63%] max-lg:w-full"> 
+													<div class="news-date text-[12px] text-Neutral/500 main font-normal rem:leading-[18px] flex items-center gap-3 mb-3"> <span>01/10/2024</span>
+														<div class="dot w-1 h-1 rounded-full bg-neutral-500 z-10"></div><span>Tin dự án</span>
+													</div>
+													<h3 class="text-Second/950 text-lg font-semibold rem:leading-[26px] pb-2 border-b border-b-neutral-50 mb-3 hover:text-Primary/Red cursor-pointer transition-all ease-in-out max-md:mb-2">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+													<p class="rem:text-[14px] text-neutral-500 font-normal leading-[18px] overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="news-cols">
+										<div class="news-col-item flex items-center">
+											<div class="news-col-flex flex items-center gap-5"> 
+												<div class="news-col-image w-[37%] max-lg:w-full max-md:mb-4"> <a class="ratio:pt-[160_240] relative block" href="./newsDetail.html"><img class="w-full h-full rounded-lg object-cover absolute top-0 left-0" src="./img/news.png" alt=""/></a></div>
+												<div class="news-col-content w-[63%] max-lg:w-full"> 
+													<div class="news-date text-[12px] text-Neutral/500 main font-normal rem:leading-[18px] flex items-center gap-3 mb-3"> <span>01/10/2024</span>
+														<div class="dot w-1 h-1 rounded-full bg-neutral-500 z-10"></div><span>Tin dự án</span>
+													</div>
+													<h3 class="text-Second/950 text-lg font-semibold rem:leading-[26px] pb-2 border-b border-b-neutral-50 mb-3 hover:text-Primary/Red cursor-pointer transition-all ease-in-out max-md:mb-2">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+													<p class="rem:text-[14px] text-neutral-500 font-normal leading-[18px] overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="news-list-2 py-20 max-lg:py-10">
+					<div class="container"> 
+						<div class="news-lists grid grid-cols-3 gap-10 max-md:grid-cols-1 max-lg:grid-cols-2"> 
+							<div class="news-left-item"> 
+								<div class="news-left-image overflow-hidden rounded-lg mb-4"> <a class="img-ratio ratio:pt-[408_680] hover:scale-105 rounded-lg" href="./newsDetail.html"><img class="w-full h-full rounded-lg" src="./img/news.png" alt=""/></a></div>
+								<div class="news-date rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3"> <span>01/10/2024</span>
+									<div class="dot w-1 h-1 rounded-full bg-Neutral/500 z-10"></div><span>Tin dự án</span>
+								</div>
+								<h3 class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+								<p class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+							</div>
+							<div class="news-left-item"> 
+								<div class="news-left-image overflow-hidden rounded-lg mb-4"> <a class="img-ratio ratio:pt-[408_680] hover:scale-105 rounded-lg" href="./newsDetail.html"><img class="w-full h-full rounded-lg" src="./img/news.png" alt=""/></a></div>
+								<div class="news-date rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3"> <span>01/10/2024</span>
+									<div class="dot w-1 h-1 rounded-full bg-Neutral/500 z-10"></div><span>Tin dự án</span>
+								</div>
+								<h3 class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+								<p class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+							</div>
+							<div class="news-left-item"> 
+								<div class="news-left-image overflow-hidden rounded-lg mb-4"> <a class="img-ratio ratio:pt-[408_680] hover:scale-105 rounded-lg" href="./newsDetail.html"><img class="w-full h-full rounded-lg" src="./img/news.png" alt=""/></a></div>
+								<div class="news-date rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3"> <span>01/10/2024</span>
+									<div class="dot w-1 h-1 rounded-full bg-Neutral/500 z-10"></div><span>Tin dự án</span>
+								</div>
+								<h3 class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+								<p class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+							</div>
+							<div class="news-left-item"> 
+								<div class="news-left-image overflow-hidden rounded-lg mb-4"> <a class="img-ratio ratio:pt-[408_680] hover:scale-105 rounded-lg" href="./newsDetail.html"><img class="w-full h-full rounded-lg" src="./img/news.png" alt=""/></a></div>
+								<div class="news-date rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3"> <span>01/10/2024</span>
+									<div class="dot w-1 h-1 rounded-full bg-Neutral/500 z-10"></div><span>Tin dự án</span>
+								</div>
+								<h3 class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+								<p class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+							</div>
+							<div class="news-left-item"> 
+								<div class="news-left-image overflow-hidden rounded-lg mb-4"> <a class="img-ratio ratio:pt-[408_680] hover:scale-105 rounded-lg" href="./newsDetail.html"><img class="w-full h-full rounded-lg" src="./img/news.png" alt=""/></a></div>
+								<div class="news-date rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3"> <span>01/10/2024</span>
+									<div class="dot w-1 h-1 rounded-full bg-Neutral/500 z-10"></div><span>Tin dự án</span>
+								</div>
+								<h3 class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+								<p class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+							</div>
+							<div class="news-left-item"> 
+								<div class="news-left-image overflow-hidden rounded-lg mb-4"> <a class="img-ratio ratio:pt-[408_680] hover:scale-105 rounded-lg" href="./newsDetail.html"><img class="w-full h-full rounded-lg" src="./img/news.png" alt=""/></a></div>
+								<div class="news-date rem:text-[16px] text-neutral-500 font-normal leading-6 flex items-center gap-3"> <span>01/10/2024</span>
+									<div class="dot w-1 h-1 rounded-full bg-Neutral/500 z-10"></div><span>Tin dự án</span>
+								</div>
+								<h3 class="text-Second/950 rem:text-[24px] font-semibold leading-8 pb-4 border-b border-b-neutral-50 mb-4 hover:text-Primary/Red cursor-pointer transition-all ease-in-out">Chung tay hành động vì một môi trường làm việc an toàn</h3>
+								<p class="rem:text-[16px] text-Neutral/500 main font-normal leading-6 overflow-ellipsis line-clamp-2">Vừa qua, tại Công trường Dự án Suncasa Central Tân Uyên, Bình Dương, Công ty Cổ phần Megabuild tự hào khi được Đài truyền hình Tỉnh Bình Dương chọn là đơn vị tuyên dương trong việc xây dựng và đảm bảo môi trường làm việc an toàn – vệ sinh lao động.</p>
+							</div>
+						</div>
+						<div class="project-3-pagination mt-10 flex items-center justify-center gap-6"> <span class="active">1</span><span>2</span><span>3</span></div>
+					</div>
+				</section>
+				<footer class="footer py-10 bg-neutral-50">
+					<div class="social-fixed fixed bottom-0 right-0 z-50 max-md:bottom-10">
+						<div class="social-fixed-main flex flex-col gap-3 py-15"> 
+							<div class="social-icon active active w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/2 text-Neutral/White inline-flex items-center justify-center text-2xl relative group p-6"><i class="fa-regular fa-arrow-up-to-line">                </i></div>
+							<div class="social-icon w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer"><i class="fa-sharp fa-solid fa-pen-to-square"></i></div>
+							<div class="social-icon w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer"><i class="fa-solid fa-phone"></i></div>
+							<div class="social-icon w-15 h-15 rounded-tl-md rounded-bl-md bg-Primary/Red text-Neutral/White inline-flex items-center justify-center text-2xl transition-all ease-linear cursor-pointer"><i class="fa-solid fa-envelope"></i></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="footer-logo mb-6"> <a href="#"><img src="./img/Logo-footer.png" alt=""></a></div>
+						<div class="footer-list max-md:grid-cols-1 max-lg:grid-cols-2"> 
+							<div class="footer-col flex flex-col gap-6"> 
+								<h1 class="font-oswald text-5xl rem:leading-[48px] text-Second/950 font-medium max-md:text-3xl">Luôn sẵn sàng hỗ trợ và đồng hành cùng bạn</h1>
+								<p class="text-[1rem] font-normal leading-6 text-neutral-900">Đăng ký nhận bản tin để cập nhật những thông tin, sự kiện mới nhất từ chúng tôi.</p>
+								<form action="">
+									<div class="form-email w-full flex items-center text-[1rem] leading-6 text-Neutral/500 main pb-2 border-b border-b-Neutral/500 main"> 
+										<input class="w-full bg-transparent" type="text" placeholder="Email"><i class="fa-solid fa-paper-plane-top"></i>
+									</div>
+								</form>
+								<div class="copy-right"> 
+									<p class="rem:text-[14px] font-normal rem:leading-[18px] text-neutral-950">© 2024 Megabuild. All Rights Reserved. Thiết kế web bởi Cánh Cam</p>
+								</div>
+							</div>
+							<div class="footer-col flex flex-col gap-10">
+								<div class="footer-col-item flex flex-col gap-2"> 
+									<h3>Văn phòng Megabuild</h3>
+									<p class="text-justify">52 – 54 Đường số 18, P. An Phú, TP. Thủ Đức, TP.HCM</p>
+								</div>
+								<div class="footer-map"> <img src="./img/map.png" alt=""></div>
+							</div>
+							<div class="footer-col">
+								<div class="footer-col-item"> 
+									<h3 class="title">Bạn cần tư vấn ?                    </h3>
+								</div>
+								<div class="footer-col-item flex items-center gap-3 pb-6 border-b border-b-slate-900"> <i class="fa-sharp fa-solid fa-phone-volume"></i><span class="text-32 text-Primary/Red leading-10 font-bold font-oswald">+84 28 2253 7288</span></div>
+								<div class="footer-col-item flex items-center gap-3 mt-6"> <i class="fa-sharp fa-solid fa-envelope"></i><span class="text-[1rem] text-Second/950 font-medium leading-6">info@megabuild.com</span></div>
+							</div>
+							<div class="footer-col"> 
+								<ul class="footer-nav flex flex-col gap-6"> 
+									<li> <a href="#">Giới thiệu</a></li>
+									<li> <a href="#">Dịch vụ</a></li>
+									<li> <a href="#">Dự án</a></li>
+									<li> <a href="#">Tin tức - Sự kiện</a></li>
+									<li> <a href="#">Tuyển dụng</a></li>
+									<li> <a href="#">Liên hệ  </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+		<script src="./js/core.min.js"></script>
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>
